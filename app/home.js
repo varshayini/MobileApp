@@ -24,21 +24,49 @@ export default function HomeScreen() {
           title: 'HIIT Workout',
           description: '30-minute high-intensity interval training',
           status: 'Beginner',
-          image: 'https://via.placeholder.com/150',
+          image: require('../Image/image1.jpg'),
         },
         {
           id: '2',
           title: 'Yoga Flow',
           description: '45-minute flexibility and strength routine',
           status: 'Intermediate',
-          image: 'https://via.placeholder.com/150',
+          image: require('../Image/image2.jpg'),
         },
         {
           id: '3',
           title: 'Strength Training',
           description: '60-minute full body workout',
           status: 'Advanced',
-          image: 'https://via.placeholder.com/150',
+          image: require('../Image/image3.jpg'),
+        },
+        {
+          id: '4',
+          title: 'Outdoor Running',
+          description: '60-minute structured running session for endurance',
+          status: 'Intermediate',
+          image: require('../Image/image3.jpg'),
+        },
+        {
+          id: '5',
+          title: 'Strength Training',
+          description: '60-minute full body workout',
+          status: 'Advanced',
+          image: require('../Image/image3.jpg'),
+        },
+        {
+          id: '6',
+          title: 'Strength Training',
+          description: '60-minute full body workout',
+          status: 'Advanced',
+          image: require('../Image/image3.jpg'),
+        },
+        {
+          id: '7',
+          title: 'Strength Training',
+          description: '60-minute full body workout',
+          status: 'Advanced',
+          image: require('../Image/image3.jpg'),
         },
       ]);
     } catch (error) {
@@ -51,7 +79,7 @@ export default function HomeScreen() {
       style={styles.card}
       onPress={() => dispatch(incrementCount())}
     >
-      <Image source={{ uri: item.image }} style={styles.cardImage} />
+      <Image source={item.image} style={styles.cardImage} />
       <View style={styles.cardContent}>
         <View style={styles.statusContainer}>
           <Text style={styles.statusTag}>{item.status}</Text>

@@ -31,7 +31,7 @@ export default function LoginScreen() {
     <SafeAreaView style={styles.container}>
       <View style={styles.loginContainer}>
         <Image 
-          source={{ uri: 'https://via.placeholder.com/150' }}
+          source={require('../Image/Logo1.png')} 
           style={styles.logo}
         />
         <Text style={styles.title}>Fitness Tracker</Text>

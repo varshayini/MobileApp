@@ -12,9 +12,9 @@ export const styles = StyleSheet.create({
     padding: 20,
   },
   logo: {
-    width: 100,
-    height: 100,
-    marginBottom: 20,
+    width: 300,
+    height: 300,
+    marginBottom: 5,
   },
   title: {
     fontSize: 24,
@@ -83,7 +83,7 @@ export const styles = StyleSheet.create({
   },
   cardImage: {
     width: '100%',
-    height: 200,
+    height: 300,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
   },
@@ -119,8 +119,8 @@ export const styles = StyleSheet.create({
     right: 20,
     backgroundColor: '#007AFF',
     borderRadius: 30,
-    width: 100,
-    height: 100,
+    width: 150,
+    height: 60,
     justifyContent: 'center',
     alignItems: 'center',
     shadowColor: '#000',
