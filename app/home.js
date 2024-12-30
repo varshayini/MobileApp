@@ -45,29 +45,23 @@ export default function HomeScreen() {
           title: 'Outdoor Running',
           description: '60-minute structured running session for endurance',
           status: 'Intermediate',
-          image: require('../Image/image3.jpg'),
+          image: require('../Image/image4.jpg'),
         },
         {
           id: '5',
-          title: 'Strength Training',
-          description: '60-minute full body workout',
+          title: 'Pilates Essentials',
+          description: '30-minute workout',
           status: 'Advanced',
-          image: require('../Image/image3.jpg'),
+          image: require('../Image/image5.jpg'),
         },
         {
           id: '6',
-          title: 'Strength Training',
-          description: '60-minute full body workout',
-          status: 'Advanced',
-          image: require('../Image/image3.jpg'),
+          title: 'Boxing Drills',
+          description: '45-minute boxing workout for strength and coordination',
+          status: 'Beginner',
+          image: require('../Image/image6.jpg'),
         },
-        {
-          id: '7',
-          title: 'Strength Training',
-          description: '60-minute full body workout',
-          status: 'Advanced',
-          image: require('../Image/image3.jpg'),
-        },
+        
       ]);
     } catch (error) {
       console.error('Error fetching workouts:', error);
@@ -104,7 +98,7 @@ export default function HomeScreen() {
       />
       
       <TouchableOpacity style={styles.floatingButton}>
-        <Text style={styles.floatingButtonText}>Clicks: {clickCount}</Text>
+        <Text style={styles.floatingButtonText}>{clickCount}</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
